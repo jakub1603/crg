@@ -1,0 +1,37 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int x;
+	int y;
+	cout << "Zadaj x:" << endl;
+	cin >> x;
+	cout << "Zadaj y: " << endl;
+	cin >> y;
+
+	string sachovnica[5][5];
+	string znaky[5] = { "A", "B", "C", "D", "E", };
+
+	//Naplnenie sachovnice najskor prazdnej
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < 5; j++) {
+			sachovnica[i][j] = " ";
+		}
+	}
+
+
+	//Prepisanie policka ktore zadal uzivatel
+
+	sachovnica[x][y] = "X";
+
+
+	// Vypis vyslednej sachovnice
+	for (int i = 0; i < 5; i++) {
+		cout << znaky[i] << ": ";
+		for (int j = 0; j < 5; j++) {
+			cout << sachovnica[i][j] << ",";
+		}
+		cout << endl;
+	}
+}
