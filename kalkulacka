@@ -1,0 +1,28 @@
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+	int x, y;
+	int sum;
+	int min;
+	int krat;
+	int del;
+	cout << "Napis cislo: ";
+	cin >> x;
+	cout << "Napis dalsie cislo:";
+	cin >> y;
+	sum = x + y;
+	cout << "Sum is: " << sum << endl;
+	min = x - y;
+	cout << "Sum is: " << min << endl;
+	krat = x * y;
+	cout << "Sum is: " << krat << endl;
+	del = x / y;
+	cout << "Sum is: " << del << endl;
+
+}
+
+*/
