@@ -1,0 +1,40 @@
+import turtle
+from random import randrange
+
+
+t = turtle.Turtle()
+t.speed(1000)
+t.color("green", "blue")
+t.shape("turtle")
+
+
+
+def stvorec (strana):
+    for i in range (4):
+        t.forward(strana)
+        t.left(90)
+
+def trojuholnik(strana):
+    for i in range (3):
+        t.forward(strana)
+        t.left(120)
+def chodenie(strana,uhol,):
+    for i in range (2):
+        t.penup()
+        t.forward(strana)
+        t.setheading(uhol)
+        t.pendown()
+        t.pencolor()
+
+for i in range (10):
+    farba = randrange (0,255)
+    uhol = randrange (0,360)
+    strana = randrange (1,100)
+    t.pencolor("green")
+    stvorec(strana)
+    chodenie(strana,uhol,)
+    t.pencolor("blue")
+    trojuholnik(strana)
+
+turtle.exitoniclick()
+
