@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int cislo;
+int i;
+
+while (i > 5) {
+    
+    
+    cout << "zadaj cislo: " << endl;
+    cin << cislo;
+    
+    if ( cislo % 2 == 0){
+        cout << cislo << "zadane cislo parne." << endl;
+    }
+    if ( cislo % 2 == 1) {
+        cout << cislo << "zadane cislo neparne." << endl;
+    }
+}
